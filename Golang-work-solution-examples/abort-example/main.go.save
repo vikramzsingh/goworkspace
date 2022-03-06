@@ -1,0 +1,20 @@
+xpackage main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+	foo()
+	bar()
+}
+
+func foo() {
+	fmt.Println("foo")
+	os.Exit(1)
+}
+
+func bar() {
+	fmt.Println("bar")
+}

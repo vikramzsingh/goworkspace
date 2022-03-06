@@ -1,0 +1,5 @@
+mode: set
+monkey-paching-with-single-handle/main.go:9.13,13.2 3 0
+monkey-paching-with-single-handle/main.go:15.30,17.16 2 1
+monkey-paching-with-single-handle/main.go:20.2,20.27 1 1
+monkey-paching-with-single-handle/main.go:17.16,19.3 1 0
