@@ -1,0 +1,45 @@
+export AWS_PROFILE=sandbox
+export AWS_DEFAULT_REGION=us-east-1
+
+export AWS_PROFILE=repo
+export AWS_GIT_PROFILE=repo
+export AWS_DEFAULT_REGION=us-east-1
+
+sls deploy  --stage sandbox --region us-east-1 --account 938718425371 --function function_Name
+
+export GOPATH="{path before src}"
+
+git fetch --all (so that mfa access token can be cached for a moment)
+
+#cd into src and cd into service. 
+ make 
+ 
+# for generating infra.json follow these:
+ export AWS_PROFILE=sandbox
+ export AWS_DEFAULT_REGION=us-east-1
+ node infra.js
+ 
+ // DYANMO, APIgateway, S3, congnito, sns, sqs, kenisis - for large data, Algolia, elastic search 
+ 
+ // vs code settings for GOLANG:
+
+{
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 16,
+    "files.autoSave": "afterDelay",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "go.inferGopath": true,
+    "go.alternateTools": {
+    
+
+    
+    },
+    
+}
+ 
+ 
+ 
+ 
+
