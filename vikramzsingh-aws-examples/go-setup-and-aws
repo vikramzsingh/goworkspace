@@ -5,7 +5,7 @@ export AWS_PROFILE=repo
 export AWS_GIT_PROFILE=repo
 export AWS_DEFAULT_REGION=us-east-1
 
-sls deploy  --stage sandbox --region us-east-1 --account 938718425371 --function function_Name
+sls deploy  --stage sandbox --region us-east-1 --account 1234567899 --function function_Name
 
 export GOPATH="{path before src}"
 
