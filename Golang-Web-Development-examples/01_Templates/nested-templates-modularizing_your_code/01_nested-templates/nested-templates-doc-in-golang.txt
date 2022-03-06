@@ -1,0 +1,14 @@
+# nested templates documentation
+ 
+define:
+{{define "TemplateName"}}
+insert content here
+{{end}}
+
+use:
+{{template "TemplateName"}}
+
+
+# template comment in golang
+
+{{/* a comment */}} 

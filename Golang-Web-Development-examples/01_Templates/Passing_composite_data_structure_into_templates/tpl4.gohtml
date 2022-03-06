@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+<ul>
+    <-- (.) dot is current piece of data which is struct and Name is (field) eg:- .Name --!>
+    <-- The current piece of data (.) is struct and i want this Name filed --!>
+
+    <li>{{.Name}} - {{.Motto}}</li>
+</ul>
+
+<ul>
+    <h1>we can also store data in variables</h1>
+        {{$x := .Name}}
+        {{$y := .Motto}}
+        <li>{{$x}} - {{$y}}}</li>
+</ul>
+</body>
+</html>

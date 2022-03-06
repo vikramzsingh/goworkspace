@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+
+{{.}}
+
+EXAMPLE #1
+{{range .}}
+{{.}}
+{{end}}
+
+EXAMPLE #2
+{{if .}} <!-- if checks to see if there is any data -->
+        EXAMPLE #2 - {{.}} <!-- there is data and that data is slice of user (struct) -->
+{{end}}
+
+EXAMPLE #3
+{{range .}} <!-- range over comming data -->
+        {{if .Name}} <!-- Checking if comming data has Name -->
+                EXAMPLE #3 - {{.Name}} <!-- print out that Name -->
+        {{end}}
+{{end}}
+
+EXAMPLE #4
+{{range .}}
+        {{if and .Name .Admin}} <!-- checks if both Name and Admin is true -->
+            EXAMPLE #4 - {{.Name}} <!-- if true then prints -->
+            EXAMPLE #4 - {{.Motto}}
+            EXAMPLE #4 - {{.Admin}}
+        {{end}}
+{{end}}
+</body>
+</html>

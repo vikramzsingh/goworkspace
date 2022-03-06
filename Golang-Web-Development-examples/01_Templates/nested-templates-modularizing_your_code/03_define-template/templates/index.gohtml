@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Header Menu</title>
+    <!-- we haven't learned to serve files yet ... -->
+   <link rel="stylesheet" type="text/css" href="css/test.css">
+
+    <!-- bootstrap file -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- jquery for nav bar -->
+    <script>
+        $(document).ready(function(e) {
+            $("#b1").click(function(e) {
+                $("#item").slideToggle("linear");
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+{{template "header"}}
+
+{{template "body"}}
+<p></p>
+{{template "footer"}}
+
+</body>
+</html>

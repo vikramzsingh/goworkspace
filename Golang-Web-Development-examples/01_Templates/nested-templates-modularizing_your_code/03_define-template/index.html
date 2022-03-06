@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Header Menu</title>
+    <!-- we haven't learned to serve files yet ... -->
+   <link rel="stylesheet" type="text/css" href="css/test.css">
+
+    <!-- bootstrap file -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- jquery for nav bar -->
+    <script>
+        $(document).ready(function(e) {
+            $("#b1").click(function(e) {
+                $("#item").slideToggle("linear");
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a href="#" class="navbar-brand text-warning">MySite.com</a>
+    <button class="navbar-toggler" id="b1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="item">
+
+        <ul class="navbar mr-auto navbar-nav navbar-left" >
+            <li class="nav-item"><a class="nav-link" href="#"><b>Home</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        </ul>
+
+        <form class="form-inline">
+            <input type="text" placeholder="Search" class="form-control">
+            <input type="button" value="Search" class="btn btn-outline-light ml-2">
+        </form>
+
+    </div>
+
+</nav>
+
+
+
+
+This is body
+
+<p></p>
+
+This is footer
+
+
+</body>
+</html>
